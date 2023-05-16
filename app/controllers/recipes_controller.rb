@@ -11,19 +11,20 @@ class RecipesController < ApplicationController
     end
   
     def create
-      recipe = Recipe.new(recipe_params)
+      recipe = Recipe.create(recipe_params)
       if recipe.valid?
-        render json: apartment
+        render json: recipe
       else
-        render json: recipe.errors, status: : 422
+        render json: recipe.errors, status: 422
       end
     end
   
     def update
+      recipe = Recipe.find(params[:id])
       if recipe.update(recipe_params)
         render json: recipe
       else
-        render json: recipe.errors, status: : 422
+        render json: recipe.errors, status: 422
       end
     end
   
@@ -39,7 +40,7 @@ class RecipesController < ApplicationController
     private
   
     def recipe_params
-      params.require(:recipe).permit(:title, :ingredients, :instructions, :vegetarian, :image_url, :cook_time, :prep_time, :user_id)
+      params.require(:recipe).permit(:title, :ingredients, :instructions, :vegetarian, :image, :cook_time, :prep_time, :user_id)
     end
   end
   
