@@ -1,6 +1,5 @@
 class RecipesController < ApplicationController
 
-  
     def index
       recipes = Recipe.all
       render json: recipes
@@ -21,7 +20,8 @@ class RecipesController < ApplicationController
   
     def update
       recipe = Recipe.find(params[:id])
-      if recipe.update(recipe_params)
+      recipe.update(recipe_params)
+      if recipe.valid?
         render json: recipe
       else
         render json: recipe.errors, status: 422

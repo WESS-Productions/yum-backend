@@ -15,9 +15,8 @@ RSpec.describe "Recipes", type: :request do
         instructions: 'Instructions 1',
         vegetarian: true,
         image: 'https://example.com/recipe1.jpg',
-        cook_time: 30,
-        prep_time: 15,
-        user_id: 1
+        cook_time: "30 minutes",
+        prep_time: "15 minutes",
       )
 
 
@@ -38,8 +37,8 @@ RSpec.describe "Recipes", type: :request do
         instructions: 'Instructions 1',
         vegetarian: true,
         image: "https://example.com/recipe1.jpg",
-        cook_time: 30,
-        prep_time: 15,
+        cook_time: "30 minutes",
+        prep_time: "15 minutes",
         user_id: user.id
       }
     }
@@ -52,8 +51,8 @@ RSpec.describe "Recipes", type: :request do
       expect(recipe.instructions).to eq "Instructions 1"
       expect(recipe.vegetarian).to eq true
       expect(recipe.image).to eq "https://example.com/recipe1.jpg"
-      expect(recipe.cook_time).to eq "30"
-      expect(recipe.prep_time).to eq "15"
+      expect(recipe.cook_time).to eq "30 minutes"
+      expect(recipe.prep_time).to eq "15 minutes"
     end
   end
 
@@ -65,9 +64,9 @@ RSpec.describe "Recipes", type: :request do
         instructions: 'Instructions 1',
         vegetarian: true,
         image: 'https://example.com/recipe1.jpg',
-        cook_time: 30,
-        prep_time: 15,
-        user_id: 1
+        cook_time: "30 minutes",
+        prep_time: "15 minutes",
+        user_id: user.id
       )
 
       recipe_params = {
@@ -77,21 +76,25 @@ RSpec.describe "Recipes", type: :request do
           instructions: 'Instructions 2',
           vegetarian: false,
           image: "https://example.com/recipe2.jpg",
-          cook_time: 60,
-          prep_time: 30,
+          cook_time: "60 minutes",
+          prep_time: "30 minutes",
           user_id: user.id
         }
-    }
-    patch "/recipes/#{recipe.id}", params: recipe_params
-    expect(response).to have_http_status(200)
-    recipe = Recipe.first
-    expect(recipe.title).to eq "Recipe 2"
-    expect(recipe.ingredients).to eq "Ingredients 2"
-    expect(recipe.instructions).to eq "Instructions 2"
-    expect(recipe.vegetarian).to eq false
-    expect(recipe.image).to eq "https://example.com/recipe2.jpg"
-    expect(recipe.cook_time).to eq "60"
-    expect(recipe.prep_time).to eq "30"
+      }
+      patch "/recipes/#{recipe.id}", params: recipe_params
+      if response.status == 422
+        errors = JSON.parse(response.body)
+        puts "Errors: #{errors}"
+      end
+      expect(response).to have_http_status(200)
+      recipe = Recipe.first
+      expect(recipe.title).to eq "Recipe 2"
+      expect(recipe.ingredients).to eq "Ingredients 2"
+      expect(recipe.instructions).to eq "Instructions 2"
+      expect(recipe.vegetarian).to eq false
+      expect(recipe.image).to eq "https://example.com/recipe2.jpg"
+      expect(recipe.cook_time).to eq "60 minutes"
+      expect(recipe.prep_time).to eq "30 minutes"
     end
   end
 
@@ -103,8 +106,8 @@ RSpec.describe "Recipes", type: :request do
         instructions: 'Instructions 1',
         vegetarian: true,
         image: 'https://example.com/recipe1.jpg',
-        cook_time: 30,
-        prep_time: 15,
+        cook_time: "30 minutes",
+        prep_time: "15 minutes",
         user_id: 1
       )
       delete "/recipes/#{recipe.id}"
