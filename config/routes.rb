@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :recipes
   get 'private/test'
   devise_for :users, 
     path: '', 
