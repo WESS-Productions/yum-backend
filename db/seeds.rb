@@ -17,7 +17,7 @@ recipes1 = [
         Serve immediately, garnished with the remaining green onion.
         Enjoy!",
     vegetarian: true,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDiXDCEvnuS2q47QcKG26W3RhJBDw6s9ksasyY_VfORbOADsnQ0wIubkUWRKOWB2_LY4&usqp=CAU",
+    image: "https://zardyplants.com/wp-content/uploads/2020/08/Vegan-Garlic-Noodles-07-1.jpg",
     cook_time: "15 minutes",
     prep_time: "15 minutes"
     
@@ -89,5 +89,129 @@ recipes1 = [
 
 recipes1.each do |recipe|
     user1.recipes.create(recipe)
+    puts "creating:#{recipe}"
+end
+
+recipes2 = [
+    {
+    title: "Tofu Lettuce Wraps",
+    ingredients: "4 oz tofu
+    1 cup water
+    ½ cup soy sauce
+    ¼ cup sesame oil
+    6 cloves garlic, minced
+    1 tablespoon minced fresh ginger
+    ¼ cup brown sugar
+    2 tablespoons sriracha
+    ¼ cup rice wine vinegar
+    ⅓ cup sliced scallions
+    1 tablespoon sesame oil
+    1 medium yellow onion, diced
+    2 ½ cups chopped mushrooms, such as shiitake
+    1 tablespoon minced garlic
+    8 oz sliced water chestnuts, drained and finely chopped
+    ⅓ cup sliced scallions
+    ½ cup canola oil
+    7 oz rice noodle
+    1 head iceberg lettuce",
+    instructions: "Remove the tofu from its packaging and drain. Wrap the tofu in a kitchen towel, then place a heavy object on top of the tofu and press for 10–20 minutes, until the tofu feels more tender.
+    Make the sauce: In a medium bowl, combine the water, soy sauce, sesame oil, garlic, ginger, sriracha, brown sugar, rice wine vinegar, and scallions and stir to dissolve the sugar. Set ½ cup (120 mL) of the sauce aside.
+    Crumble the pressed tofu into the remaining marinade, then cover and refrigerate for 1 hour.
+    Heat the sesame oil in a medium skillet or work over medium heat. Add the onion and sauté for 3 minutes, until translucent. Add the mushrooms and cook for about 5 minutes, or until tender, then stir in the garlic and cook for 1 minute, until fragrant.
+    Add the tofu and its marinade to the pan and cook until the majority of the liquid cooks off. Add the water chestnuts and scallions. Pour in three-quarters of the reserved sauce. Toss to coat the tofu and cook until just heated through. Transfer the tofu mixture to a medium bowl.
+    Heat the canola oil in the same pan over high heat until a drop of water sizzles when flicked onto the oil. Add the rice noodles and fry for about 30 seconds, until puffed up. Transfer the fried noodles to paper towels to drain.
+    Remove the core from the head of lettuce, then separate into individual leaves.
+    Serve the tofu in the lettuce cups and top with the crispy rice noodles and a drizzle of the remaining sauce.
+    Enjoy!",
+    vegetarian: true,
+    image: "https://www.loveandoliveoil.com/wp-content/uploads/2020/02/tofu-lettuce-wraps-FEAT.jpg",
+    cook_time: "15 Minutes",
+    prep_time: "15 Minutes"
+    
+},
+    {
+    title: "Banana Bread",
+    ingredients: "Flour, Baking Soda, Salt, Butter, Brown Sugar, Eggs, Bananas",
+    instructions: "1. Combine the dry ingredients in one bowl.
+    2. Beat the butter and sugar in another bowl. Add the eggs and mashed bananas.
+    3. Add the wet mixture to the dry mixture.
+    4. Pour the batter into a loaf pan and bake in a preheated oven.
+    ",
+    vegetarian: true,
+    image: "https://live.staticflickr.com/8652/16431315088_87eb423597_b.jpg",
+    cook_time: "1 Hour",
+    prep_time: "15 Minutes"
+    
+},
+    {
+    title: "French Onion Soup",
+    ingredients: "6 large red or yellow onions (about 3 pounds)
+    4 tablespoons extra virgin olive oil
+    2 tablespoons butter
+    1 teaspoon sugar
+    Kosher salt
+    2 cloves garlic, minced
+    8 cups beef stock, chicken stock, or a combination of the two
+    1/2 cup dry vermouth or dry white wine
+    2 bay leaves
+    1 tablespoon fresh thyme leaves, a few sprigs of fresh thyme, OR 1/2 teaspoon dried thyme
+    1/2 teaspoon freshly ground black pepper
+    2 tablespoons brandy (optional)
+    8 slices (1 inch thick) French bread or baguette
+    1 1/2 cups grated Gruyere cheese
+    Sprinkling grated Parmesan cheese",
+    instructions: "Peel and slice the onions, Begin caramelizing the onions with olive oil and butter, Sprinkle with the sugar, finish caramelizing, and add garlic, Deglaze the pot with vermouth or wine, Add the stock, bay leaves, and thyme, Season and add the brandy, Toast the French bread slices, Serve",
+    vegetarian: false,
+    image: "https://live.staticflickr.com/34/123814244_6f63627247_b.jpg",
+    cook_time: "1 Hour",
+    prep_time: "20 Minutes"
+    
+},
+    {
+    title: "Corned Beef and Cabbage",
+    ingredients: "2 qt water
+    2 cups kosher salt
+    1 cup brown sugar
+    2 teaspoons pink curing salt
+    5 cloves garlic, crushed
+    1 fresh ginger, 2 in (5 cm) sliced
+    1 cinnamon stick, broken into pieces
+    3 bay leaves, crumbled
+    1 tablespoon mustard seed
+    1 tablespoon black peppercorn
+    8 whole allspice berries
+    12 juniper berries
+    8 whole cloves
+    2 lb ice
+    5 lb beef brisket, good-quality, trimmed
+    1 large yellow onion, chopped
+    3 celery stalks, chopped
+    2 large carrots, chopped
+    ginger beer, 2 bottles
+    dark extra-stout beer, 2 bottles
+    1 ½ lb small red potato
+    9 carrots, halved crosswise
+    1 medium green cabbage, quartered
+    5 lb corned beef brisket, thinly sliced",
+    instructions: "In a very large pot, combine the water, kosher salt, brown sugar, pink curing salt, garlic, ginger, cinnamon stick, bay leaves, mustard seeds, peppercorns, allspice berries, juniper berries, and cloves. Stir and bring to a boil over high heat.
+    Once the brine is boiling, remove from the heat and add the ice to bring the temperature below 45˚F (7˚C).
+    Place the brisket in a large plastic storage container with a lid. Pour the cooled brine over the meat. Cover and brine the beef in the refrigerator for 5–7 days, flipping once a day.
+    Once the brisket is brined, remove the beef from the liquid and transfer to a pot large enough for it to sit flat on the bottom. Add the onion, celery, carrot, ginger beer, and beer. Bring to a boil over high heat, then reduce the heat to low, cover, and gently simmer for 2½–3 hours, or until the meat is fork-tender. Remove the meat from the pot and let cool. If making corned beef and cabbage, reserve the cooking liquid. Otherwise, discard.
+    Thinly slice the brisket against the grain for sandwiches or corned beef and cabbage, or dice for corned beef hash.
+    Return the corned beef cooking liquid to a boil over medium-high heat. (If starting with new cooking liquid, combine the chicken broth, water, chopped carrots, celery, and onion in a large pot and bring to a boil.)
+    Once the cooking liquid is boiling, add the potatoes and cook for 10 minutes, until half-cooked. Add the halved carrots and cabbage, cover, and cook for 10–15 minutes more, until the vegetables are tender.
+    Transfer the vegetables to a serving platter with the sliced brisket and ladle the cooking liquid over.
+    Enjoy!",
+    vegetarian: true,
+    image: "https://live.staticflickr.com/4089/5133152203_54198325f9_b.jpg",
+    cook_time: "4 Hours",
+    prep_time: "5-7 Days"
+    
+},
+
+]
+
+recipes2.each do |recipe|
+    user2.recipes.create(recipe)
     puts "creating:#{recipe}"
 end
