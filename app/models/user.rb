@@ -3,4 +3,6 @@ class User < ApplicationRecord
     :jwt_authenticatable, jwt_revocation_strategy: JwtDenylist
     has_many :recipes
 
+    validates :email, :encrypted_password, presence: true
+
 end
