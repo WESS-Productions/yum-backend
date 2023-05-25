@@ -208,6 +208,121 @@ recipes2 = [
     prep_time: "5-7 Days"
     
 },
+{
+    title: "Chocolate Chip Cookies",
+    ingredients: "
+    Butter
+    Eggs
+    Vanilla
+    Baking Soda
+    Water
+    Salt
+    Flour
+    Chocolate chips
+    ",
+    instructions: "Beat the butter and sugars, then beat in the eggs and vanilla.
+    Dissolve the baking soda in hot water and add to the mixture.
+    Stir in the flour, chocolate chips, and walnuts.
+    Drop dough onto a prepared baking sheet.
+    Bake at 350 F until the edges are golden brown.",
+    vegetarian: true,
+    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+    cook_time: "10 minutes",
+    prep_time: "20 minutes"
+    
+},
+{
+    title: "Gnocchi with Creamed Spinach",
+    ingredients: "Kosher salt and freshly ground black pepper
+    1 (19-ounce) package shelf-stable gnocchi
+    1 (9-ounce) package frozen cream of spinach, defrosted
+    1/2 c. heavy cream
+    2 oz. Parmesan, grated (about 1/2 cup)
+    1/8 tsp. freshly grated nutmeg
+    Lemon zest, for garnish",
+    instructions: "In a large pot of salted water, cook gnocchi according to package directions. 
+    Meanwhile, cook cream of spinach and cream in a large, nonstick skillet over medium heat until warm and thickened, 3 to 4 minutes. Season with salt and pepper. Add Parmesan, nutmeg, and gnocchi, and stir to coat. Serve garnished with lemon zest.",
+    vegetarian: true,
+    image: "https://hips.hearstapps.com/hmg-prod/images/gnocchi-with-creamed-spinach-644ae3db44882.jpg?crop=1.00xw:0.836xh;0,0.0205xh&resize=1200:*",
+    cook_time: "10 minutes",
+    prep_time: "10 minutes"
+    
+},
+{
+    title: "8 oz. fresh chorizo, casings removed
+    1 tbsp. oil
+    2 corn tortillas, torn or cut into strips
+    4 eggs, well beaten
+    Kosher salt and freshly ground black pepper
+    Sliced avocado, diced tomatoes, and sour cream or crumbled queso, for garnish",
+    instructions: "Cook chorizo in a large skillet over medium heat, breaking it into pieces, until browned and cooked through, 5 to 7 minutes. Remove chorizo, with a slotted spoon, reserving oil. Add 1 tablespoon oil (you want about 2 tablespoons total in the skillet) and tortillas to skillet. Cook, without stirring, until crispy, 3 to 4 minutes. 
+    Return chorizo to skillet. Add eggs and season with salt and pepper. As eggs begin to set, scrape mixture into center of pan with a heatproof spatula. 
+    Just before eggs are fully cooked, remove pan from heat. Divide mixture among 4 plates, and garnish with avocado, tomatoes, and sour cream or queso, dividing evenly. Serve immediately.",
+    vegetarian: false,
+    image: "https://hips.hearstapps.com/hmg-prod/images/migas-with-chorizo-644aea730ba5f.jpg?crop=1.00xw:0.836xh;0,0.108xh&resize=1200:*",
+    cook_time: "15 minutes",
+    prep_time: "15 minutes"
+    
+},
+{
+    title: "Chicken Marsala",
+    ingredients: "1/2 c. all-purpose flour
+    8 chicken cutlets or 4 chicken breasts, sliced in half (about 1.5 lbs)
+    Kosher salt and freshly ground black pepper
+    2 tbsp. canola oil
+    2 tbsp. unsalted butter
+    1 (8-ounce) package sliced mushrooms
+    1/3 c. chopped onion (about 1/2 small onion)
+    2 cloves garlic, chopped
+    1/2 c. dry Marsala wine
+    3/4 c. chicken stock
+    1/2 c. heavy cream
+    1 tsp. fresh thyme, plus more for garnish",
+    instructions: "Place flour in a shallow bowl. Use a meat tenderizer or the bottom of a sturdy cup to pound chicken to about 1/4 inch thick. Season with salt and pepper. Dredge chicken in flour, turning to coat all sides. Heat oil in a medium skillet over medium-high heat. Cook chicken in batches, turning once, until golden brown, 3 to 4 minutes. Transfer to a plate and tent to keep warm. Reserve skillet.
+    Pour off oil from skillet. Melt butter in skillet over medium heat. Add mushroom and onions. Season with salt and pepper. Cook, stirring occasionally, until tender, 5 to 7 minutes. Add garlic and cook, stirring, until fragrant, 2 to 3 minutes. Add wine, stock, cream, and thyme. Simmer, stirring occasionally, until thickened, 14 to 16 minutes. Season with salt and pepper. Return chicken to pan and toss to coat. Serve immediately garnished with  thyme.",
+    vegetarian: false,
+    image: "https://www.verywellfit.com/thmb/cjkOVsG_E0nD7JIJ9tewwbZDTx4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/chicken-marsala-962194078-04aca06b8b2b48588e40c8b57210c294.jpg",
+    cook_time: "30 minutes",
+    prep_time: "30 minutes"
+    
+},
+{
+    title: "Asparagus Frittata with Burrata and Herb Pesto",
+    ingredients: "1/2 c. chopped fresh herbs such as basil, chives, and flat-leaf parsley
+    1/4 c. plus 2 tablespoons olive oil, divided
+    Kosher salt and freshly ground black pepper
+    10 large eggs
+    1/3 c. heavy cream
+    1 oz. Parmesan, grated (about 1/4 cup)
+    1 bunch asparagus (about 1 pound), cut into 1-inch pieces and tough ends discarded
+    2 c. packed baby spinach
+    1 (4-ounce) ball Burrata
+    2 tbsp. toasted pine nuts",
+    instructions: "Preheat oven to 350°F. Combine basil, chives, parsley, and 1/4 cup oil in a bowl. Season with salt and pepper. Whisk together eggs, cream, and Parmesan in a separate bowl. Season with salt and pepper. 
+    Heat remaining 2 tablespoons oil in a 10-inch cast-iron skillet over medium-high heat. Add asparagus, and season with salt and pepper. Cook, stirring occasionally, until crisp-tender, 3 to 4 minutes. Add spinach and cook, stirring, just until wilted, about 1 minute. Pour egg mixture over vegetables and cook, without stirring, until eggs start to set around the edges, 2 to 4 minutes. Transfer skillet to the oven, and bake until cooked through, 12 to 14 minutes. Let cool for 5 minutes. 
+    Place Burrata in center of frittata, and break open slightly with a knife. Top with herb mixture and sprinkle with pine nuts. Serve immediately.",
+    vegetarian: true,
+    image: "https://live.staticflickr.com/4089/5133152203_54198325f9_b.jpg",
+    cook_time: "30 minutes",
+    prep_time: "25 minutes"
+    
+},
+{
+    title: "Vermouth Air Fried Shrimp",
+    ingredients: "1/3 c. dry vermouth
+    2 1/2 tbsp. soy sauce
+    2 1/2 tbsp. fresh ginger, grated or minced
+    1 small clove garlic, grated or minced
+    24 large shrimp (about 2/3 pound), thawed
+    1 1/2 tbsp. olive oil
+    Chopped fresh chives for garnish",
+    instructions: "Combine vermouth, soy sauce, ginger, and garlic in a bowl. Add shrimp and toss to coat. Marinate for at least 20 minutes and up to 1 hour. 
+    Preheat air fryer to 400°F. Drain shrimp and discard marinade. Toss shrimp in oil. Air Fryer until just cooked through, 6 to 8 minutes. Served garnished with chives.",
+    vegetarian: false,
+    image: "https://hips.hearstapps.com/hmg-prod/images/vermouth-air-fried-shrimp-1672950395.jpg?crop=0.860xw:0.718xh;0.0308xw,0.0781xh&resize=1200:*",
+    cook_time: "10 minutes",
+    prep_time: "10minutes"
+},
 
 ]
 
