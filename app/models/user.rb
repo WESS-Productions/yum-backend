@@ -4,5 +4,8 @@ class User < ApplicationRecord
     has_many :recipes
 
     validates :email, :encrypted_password, presence: true
+    validates :email, uniqueness: true
+    validates :email, :password, length: { minimum: 1 }
+   
 
 end

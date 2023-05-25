@@ -18,7 +18,7 @@ RSpec.describe Recipe, type: :model do
         user_id: 1
       )
     expect(recipe.errors[:title]).to include "can't be blank"
-  end
+    end
 
   it "should have a valid ingredients list" do
     recipe = user.recipes.create(
@@ -98,5 +98,78 @@ RSpec.describe Recipe, type: :model do
     expect(recipe.errors[:prep_time]).to include "can't be blank"
   end
 
+  it "should have a valid instructions length" do
+    recipe = user.recipes.create(
+      title: 'Recipe 1',
+      instructions: 'Instructions 1',
+      vegetarian: true,
+      image: 'https://example.com/recipe1.jpg',
+      cook_time: "30 minutes",
+      prep_time: "15 minutes",
+      user_id: 1
+    )
+    expect(recipe.instructions.length).to be >= 1
+  end
 
+  it "should have a valid ingredients length " do
+    recipe = user.recipes.create(
+      title: 'Recipe 1',
+      ingredients: 'Ingredients 1',
+      instructions: 'Instructions 1',
+      vegetarian: true,
+      image: 'https://example.com/recipe1.jpg',
+      cook_time: "30 minutes",
+      prep_time: "15 minutes",
+      user_id: 1
+    )
+    expect(recipe.ingredients.length).to be >= 1
+  end
+  
+  it "should have a valid title" do
+    recipe = user.recipes.create(
+      title: 'Recipe 1',
+      ingredients: 'Ingredients 1',
+      instructions: 'Instructions 1',
+      vegetarian: true,
+      image: 'https://example.com/recipe1.jpg',
+      cook_time: "30 minutes",
+      prep_time: "15 minutes",
+      user_id: 1
+    )
+    expect(recipe.title.length).to be >= 1
+  end
+  
+  it "should have a valid image" do
+    recipe = user.recipes.create(
+      title: 'Recipe 1',
+      ingredients: 'Ingredients 1',
+      instructions: 'Instructions 1',
+      vegetarian: true,
+      image: 'https://example.com/recipe1.jpg',
+      cook_time: "30 minutes",
+      prep_time: "15 minutes",
+      user_id: 1
+    )
+    expect(recipe.image).to be_present
+    expect(recipe.image.length).to be >= 1
+  end
+  
+  it "should have a valid cook time" do
+    recipe = user.recipes.create(
+      title: 'Recipe 1',
+      ingredients: 'Ingredients 1',
+      instructions: 'Instructions 1',
+      vegetarian: true,
+      image: 'https://example.com/recipe1.jpg',
+      cook_time: "30 minutes",
+      prep_time: "15 minutes",
+      user_id: 1
+    )
+  
+    expect(recipe.cook_time).to be_present
+    expect(recipe.cook_time.length).to be >= 1
+    expect(recipe.cook_time).to eq("30 minutes")
+  end
+  
+  
 end
